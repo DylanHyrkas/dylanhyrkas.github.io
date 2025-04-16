@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #667a6b;
+}
+
+.header {
+  position: static;
+  margin: 20px;
+}
+
+.headerButton {
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #5b6b5f;
+  border: 2px solid rgb(100, 100, 100);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.main {
+  align-content: center;
+  text-align: center;
+}
+
+.paper {
+  background-color: #5b6b5f;
+  width: 50vw;
+  margin: 0 auto;
+  border: black solid 2px;
+  border-radius: 15px;
+  padding: 10px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
