@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A simple website for Dylan" />
-  <meta name="author" content="Dylan Hyrkas, Dhyrk" />
-  <meta name="keywords" content="Web Dev, Typescript, Projects, Dhyrk, Dylan Hyrkas" />
-  <title>Dhyrk</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div id="particles"></div>
-  
-  <div class="main">
-    <div class="paper">
-      <div class="corner corner-tl"></div>
-      <div class="corner corner-tr"></div>
-      <div class="corner corner-bl"></div>
-      <div class="corner corner-br"></div>
-      
-      <content>
-        <h2>Whats Up!!!</h2>
-        <p>Hi I'm Dylan Hyrkas a random kid.</p>
-        <p>
-          Hi lol. I dont have anything to put here. so this is it.
-        </p>
-        <h3>Contact Me</h3>
-        <div class="contact-links">
-          <a href="mailto:dylhyrkas@gmail.com" class="contact-link" target="_blank">Email</a>
-          <a href="https://github.com/DylanHyrkas" class="contact-link" target="_blank">GitHub</a>
-        </div>
-      </content>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple website for Dylan" />
+    <meta name="author" content="Dylan Hyrkas, Dhyrk" />
+    <meta
+      name="keywords"
+      content="Web Dev, Typescript, Projects, Dhyrk, Dylan Hyrkas"
+    />
+    <title>Dhyrk</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="particles"></div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const particlesContainer = document.getElementById('particles');
-      const particleCount = 80;
-      
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.style.position = 'absolute';
-        particle.style.width = Math.random() * 3 + 1 + 'px';
-        particle.style.height = particle.style.width;
-        particle.style.backgroundColor = `rgba(${177 + Math.random() * 50}, ${157 + Math.random() * 50}, 255, ${0.2 + Math.random() * 0.3})`;
-        particle.style.borderRadius = '50%';
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.top = Math.random() * 100 + '%';
-        particle.style.boxShadow = '0 0 10px rgba(177, 157, 255, 0.5)';
-        particle.style.animation = `float ${10 + Math.random() * 20}s infinite ease-in-out`;
-        
-        const style = document.createElement('style');
-        style.textContent = `
+    <div class="main">
+      <div class="paper">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <content>
+          <h2>Whats Up!!!</h2>
+          <p>Hi I'm Dylan Hyrkas a random kid.</p>
+          <p>Hi lol. I dont have anything to put here. so this is it.</p>
+          <h3>Contact Me</h3>
+          <div class="contact-links">
+            <a
+              href="mailto:dylhyrkas@gmail.com"
+              class="contact-link"
+              target="_blank"
+              >Email</a
+            >
+            <a
+              href="https://github.com/DylanHyrkas"
+              class="contact-link"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </content>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const particlesContainer = document.getElementById("particles");
+        const particleCount = 80;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.style.position = "absolute";
+          particle.style.width = Math.random() * 3 + 1 + "px";
+          particle.style.height = particle.style.width;
+          particle.style.backgroundColor = `rgba(${177 + Math.random() * 50}, ${
+            157 + Math.random() * 50
+          }, 255, ${0.2 + Math.random() * 0.3})`;
+          particle.style.borderRadius = "50%";
+          particle.style.left = Math.random() * 100 + "%";
+          particle.style.top = Math.random() * 100 + "%";
+          particle.style.boxShadow = "0 0 10px rgba(177, 157, 255, 0.5)";
+          particle.style.animation = `float ${
+            10 + Math.random() * 20
+          }s infinite ease-in-out`;
+
+          const style = document.createElement("style");
+          style.textContent = `
           @keyframes float {
             0%, 100% { transform: translate(0, 0); }
-            25% { transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px); }
-            50% { transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px); }
-            75% { transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px); }
+            25% { transform: translate(${Math.random() * 100 - 50}px, ${
+            Math.random() * 100 - 50
+          }px); }
+            50% { transform: translate(${Math.random() * 100 - 50}px, ${
+            Math.random() * 100 - 50
+          }px); }
+            75% { transform: translate(${Math.random() * 100 - 50}px, ${
+            Math.random() * 100 - 50
+          }px); }
           }
         `;
-        document.head.appendChild(style);
-        
-        particlesContainer.appendChild(particle);
-      }
-      
-    });
-  </script>
-</body>
+          document.head.appendChild(style);
+
+          particlesContainer.appendChild(particle);
+        }
+      });
+    </script>
+  </body>
 </html>
