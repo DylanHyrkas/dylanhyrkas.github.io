@@ -96,7 +96,11 @@ content {
   z-index: 2;
 }
 
-h2 {
+.header-container {
+  width: fit-content;
+}
+
+h1 {
   font-size: clamp(1.8rem, 5vw, 2.8rem);
   margin-bottom: 1.2rem;
   text-shadow: var(--text-shadow);
@@ -133,6 +137,8 @@ h3 {
   transition: all 0.3s ease;
   border: 1px solid var(--link-border);
   font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
 }
 
 .contact-link:hover {
@@ -197,32 +203,4 @@ h3 {
   width: 24px;
   height: 24px;
   fill: var(--secondary-color);
-}
-
-/* Mobile  */
-@media (max-width: 480px) {
-  .paper {
-    padding: 1.2rem;
-  }
-
-  h2 {
-    margin-bottom: 1rem;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .contact-link {
-    width: 100%;
-    text-align: center;
-  }
-
-  .theme-toggle {
-    width: 40px;
-    height: 40px;
-    bottom: 15px;
-    right: 15px;
-  }
 }
