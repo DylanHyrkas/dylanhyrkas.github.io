@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dylan Hyrkas" />
-    <title>Dhyrk</title>
+    <title>Post — Dhyrk</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="post.js"></script>
   </head>
   <body>
     <div class="main">
@@ -17,24 +18,8 @@
         <div class="corner corner-br"></div>
 
         <content>
-          <h1 class="hacker" data-value="Dhyrk">Dhyrk</h1>
-          <p>Hi, I'm Dylan Hyrkas.</p>
-
-          <h2>Blog</h2>
-          <div class="contact-links">
-            <a href="blog.html" class="contact-link">Blog</a>
-          </div>
-
-          <h2>Projects</h2>
-          <div class="contact-links">
-            <a href="https://rook.dhyrk.com" class="contact-link" target="_blank">Rook — card game scoring app</a>
-          </div>
-
-          <h2>Contact</h2>
-          <div class="contact-links">
-            <a href="mailto:dylhyrkas@gmail.com" class="contact-link" target="_blank">Email</a>
-            <a href="https://github.com/DylanHyrkas" class="contact-link" target="_blank">GitHub</a>
-          </div>
+          <div id="post-content">Loading...</div>
+          <h2><a href="blog.html" class="back-link">← Back</a></h2>
         </content>
       </div>
     </div>

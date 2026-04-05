@@ -114,9 +114,10 @@ p {
   color: var(--lighter-color);
 }
 
-h3 {
-  font-size: 1.5rem;
+h2 {
+  font-size: 1.2rem;
   margin: 1.5rem 0 0.8rem;
+  color: var(--secondary-color);
 }
 
 .contact-links {
@@ -179,6 +180,64 @@ h3 {
   right: 10px;
   border-bottom: 2px solid var(--corner-color);
   border-right: 2px solid var(--corner-color);
+}
+
+.back-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+#post-content h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  margin-bottom: 1.2rem;
+  text-shadow: var(--text-shadow);
+  letter-spacing: -1px;
+}
+
+#post-content h2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.8rem;
+  color: var(--secondary-color);
+}
+
+#post-content ul,
+#post-content ol {
+  margin: 0.8rem 0 1.2rem 1.5rem;
+  color: var(--lighter-color);
+  line-height: 1.6;
+}
+
+#post-content code {
+  background: var(--link-bg);
+  border: 1px solid var(--link-border);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+}
+
+#post-content pre {
+  background: var(--link-bg);
+  border: 1px solid var(--link-border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.2rem;
+}
+
+#post-content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+#post-content a {
+  color: var(--secondary-color);
 }
 
 .theme-toggle {

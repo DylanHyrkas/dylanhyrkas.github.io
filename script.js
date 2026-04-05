@@ -55,7 +55,7 @@ function applyTextEffect(element) {
 }
 
 // Apply to all h2 elements
-document.querySelectorAll("#hacker").forEach((h2) => {
+document.querySelectorAll(".hacker").forEach((h2) => {
   h2.onmouseover = (event) => {
     if (event.target.interval) {
       clearInterval(event.target.interval);
